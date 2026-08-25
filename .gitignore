@@ -1,0 +1,27 @@
+# Pester test output
+TestResults.xml
+coverage.xml
+*.coverage.xml
+
+# Accidental local secrets -- the tool itself never writes these inside the
+# repo (real settings.json / credentials live in %USERPROFILE%\.claude and
+# %USERPROFILE%\.claude-class), but ignore defensively in case someone drops
+# a local test file here.
+settings.json
+settings.local.json
+*.credentials.json
+*.env
+.env.local
+
+# Editor / IDE
+.vscode/
+.vs/
+*.code-workspace
+
+# OS cruft
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# PowerShell transcripts, if anyone runs Start-Transcript while testing
+PowerShell_transcript*.txt
